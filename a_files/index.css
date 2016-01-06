@@ -1,0 +1,310 @@
+@charset "utf-8";
+/*
+ *背景颜色
+ */
+/*
+ *文字颜色和大小
+ */
+/*
+ *文字粗细和字体
+ */
+/*
+ *元素宽高
+ */
+/*
+ *元素外边距
+ */
+/*
+ *元素内边距
+ */
+/*
+ *几种常用定位方式
+ */
+/*
+ *清除浮动
+ */
+/*
+ *图片与容器等大小
+ */
+/*
+ *根据百分比设定背景图片大小
+ */
+/*
+ *旋转指定角度
+ */
+/*
+ *文本上下左右居中
+ */
+/*
+ *四个角的圆角
+ */
+a:link{
+    text-decoration:none;
+}
+a:visited{
+    text-decoration:none;
+}
+a:hover{
+    text-decoration:none;
+}
+a:active{
+    text-decoration:none;
+}
+body {
+    font-weight: normal;
+    font-family: "Comic Sans MS","幼圆","黑体",sans-serif;
+    background-color: #f3f6f8;
+}
+.img_full {
+    width: 100%;
+    height: 100%;
+}
+.panel {
+    border: none;
+    background-color: #f3f6f8;
+}
+.bborder {
+    border-bottom: 1px solid #cdcdcd;
+}
+.banner {
+    width: 100%;
+    height: 100%;
+    background-color: #FA5541;
+    padding: 12.7999992px;
+}
+.banner .logo {
+    background-color: #cc4a29;
+    border-radius: 10px;
+    width: 100%;
+    height: 110px;
+    padding: 20.2666654px 21.333332px 5.333333px;
+}
+.banner .logo .logo_img {
+    margin-top: 0px;
+    width: 58.666663px;
+    height: 58.666663px;
+    display: inline-block;
+}
+.banner .logo .logo_img div {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 6px;
+    font-size: 10px;
+    color: white;
+}
+.banner .logo .logo_txt {
+    margin-top: 7px;
+    float: right;
+    text-align: right;
+}
+.banner .logo .logo_txt br {
+    margin: 0;
+}
+.banner .logo .logo_txt .yue {
+    color: #ffffff;
+    font-size: 15.999999px;
+}
+.banner .logo .logo_txt .amount {
+    display: block;
+    margin-top: -6px;
+    color: #ffffff;
+    font-size: 45.8666638px;
+}
+.banner .in {
+    width: 100%;
+    height: 37.333331px;
+    margin-top: 11.7333326px;
+}
+.banner .in .incomes {
+    display: inline-block;
+    width: 44%;
+    height: 37.333331px;
+    border-radius: 8px;
+    text-align: center;
+    line-height: 37.333331px;
+    color: #ffffff;
+    font-size: 12.7999992px;
+    background-color: #cc4a29;
+}
+.banner .in .students {
+    float: right;
+    width: 44%;
+    height: 37.333331px;
+    border-radius: 8px;
+    text-align: center;
+    line-height: 37.333331px;
+    color: #ffffff;
+    font-size: 12.7999992px;
+    background-color: #cc4a29;
+}
+.nav {
+    width: 100%;
+    height: 42.666664px;
+    line-height: 43.7333306px;
+    border-bottom: 1px solid #cdcdcd;
+    background-color: #ffffff;
+}
+.nav a {
+    color: #000000;
+    font-size: 15.999999px;
+    font-weight: 600;
+    text-align: center;
+    width: 33%;
+    display: inline-block;
+    float: left;
+    position: relative;
+}
+.nav a .new_tip {
+    display: inline-block;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 16.666666px;
+    background-color: #cc4a29;
+    width: 90.666666px;
+    height: 16.666666px;
+    color: #ffffff;
+    font-size: 10.666666px;
+    position: absolute;
+    top: 9.5999994px;
+    left: 70%;
+}
+.nav .nav2 {
+    width: 34%;
+    position: relative;
+}
+.nav .nav2:after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 17.7999992px;
+    left: 0;
+    top: 12.7999992px;
+    border-right: 1px solid #cdcdcd;
+}
+.nav .nav2:before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 17.7999992px;
+    right: 0;
+    top: 12.7999992px;
+    border-right: 1px solid #cdcdcd;
+}
+.line {
+    margin: 0;
+    border-bottom: 1px solid #cdcdcd;
+    margin-top: -2px;
+}
+.item {
+    background-color: #ffffff;
+    width: 100%;
+    height: 74.666662px;
+    padding: 0 0 0 15.999999px;
+}
+.item div {
+    display: inline-block;
+}
+.item a {
+    display: block;
+    width: 100%;
+    height: 74.666662px;
+    line-height: 69.333329px;
+}
+.item a .img_pos {
+    width: 50.4666642px;
+    height: 50.4666642px;
+    margin: 0 10.666666px;
+}
+.item a .item_topic {
+    display: inline-block;
+    color: #000000;
+    font-size: 17.0666656px;
+    font-weight: 600;
+}
+.item a .item_left {
+    float: right;
+    margin-right: 14.9333324px;
+    color: #cccccc;
+    font-size: 15.999999px;
+}
+.item a .item_left .triangle {
+    width: 13.3333325px;
+    height: 13.3333325px;
+    border-top: 2px solid #808080;
+    border-left: 2px solid #808080;
+    transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+}
+.update {
+    position: fixed;
+    width: 45.8666638px;
+    height: 45.8666638px;
+    right: 5.333333px;
+    bottom: 0;
+    transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transition: all 1s;
+}
+.update:hover {
+    transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+}
+
+#bg {
+    display: block;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 1001;
+    -moz-opacity: 0.5;
+    opacity: .50;
+    filter: alpha(opacity=50);
+}
+.red_model {
+    display: block;
+    z-index: 88888;
+    position: fixed;
+    width: 80%;
+    height: 280px;
+    background-color: #e52f17;
+    left: 10%;
+    top: 100px;
+    border-radius: 8px;
+    text-align: center;
+    padding: 18px;
+    color: white;
+}
+.red_model img {
+    display: inline-block;
+}
+.red_model h3 {
+    color: #ffffff;
+    font-size: 24px;
+}
+.red_model p {
+    text-align: left;
+    padding: 0 15px;
+}
+.red_model hr {
+    border: none;
+    margin: 8px 0;
+}
+.red_model button {
+    background-color: #fa5341;
+    width: 100%;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    box-shadow: 0 5px 4px 0 rgba(152, 152, 152, 0.5);
+    color: #ffffff;
+    font-size: 20px;
+}
