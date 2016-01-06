@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <title>小客客</title>
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0, user-scalable=1">
+    <link rel="stylesheet" href="./common/bootstrap.min.css">
+    <link rel="apple-touch-icon-precomposed" sizes="57×57" href="http://libao.taofulila.com/zs_logo-57.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72×72" href="http://libao.taofulila.com/zs_logo-72.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114×114" href="http://libao.taofulila.com/zs_logo-114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144×144" href="http://libao.taofulila.com/zs_logo-144.png">
+    <script src="./common/hm.js"></script>
+    <script src="./common/jquery.min.js"></script>
+    <script type="text/javascript" src="./common/jquery.oLoader.min.js"></script>
+    <script type="text/javascript" src="./common/fingerprint.js"></script>
+    <script>
+    $(function() {
+        $.oPageLoader({
+            waitLoad: true,
+            fadeLevel: 1,
+            backgroundColor: '#fff',
+            style: 0,
+            fadeInTime: 30,
+            fadeOutTime: 300
+        });
+    });
+    </script>
+</head>
+
+<body style="overflow: auto;">
+    <link rel="stylesheet" href="./feedback_files/feedback.css">
+    <div id="bg" style="display: none;"></div>
+    <div class="success" style="display: none;">
+        <div>
+            <img src="./feedback_files/gou.png" class="img-responsive">
+        </div>
+        您的工单已经提交
+    </div>
+    <div class="container-fluid">
+        <div class="row header">
+            <div class="col-xs-12">
+                <div class="triangle" onclick="'more.html'"></div>
+                <span class="return"></span>
+                <span class="title">意见反馈</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 welcome">
+                欢迎每一位用户提出留言与建议
+            </div>
+        </div>
+        <div class="row form">
+            <form method="post" id="fankui" action="./feedback_files/feedback.html">
+                <div class="col-xs-12 fb_type bd_btm">
+                    <span class="red_star">*</span> 反馈类型:
+                    <select class="select" required="" name="TicketForm[type]">
+                        <option value="1" selected="">任务相关</option>
+                        <option value="2">支付宝相关</option>
+                    </select>
+                </div>
+                <input style="display: none" value="工单提交" name="TicketForm[title]">
+                <input style="display: none" value="11920363-9742-cf09-41db-793eaba9aa57@259" name="TicketForm[openid]">
+                <div class="col-xs-12 fb_content">
+                    <span class="red_star">*</span> 反馈内容:
+                    <br>
+                    <textarea id="contents" name="TicketForm[content]" required="" class="content" placeholder="请输入反馈内容，不得少于五个字。(如做了游戏不得积分、需要修改支付宝等)"></textarea>
+                </div>
+                <div class="col-xs-12 submit">
+                    <button type="button" onclick="check()">意见反馈</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+    $(function() {
+
+        $("#bg").hide();
+        $(".success").hide();
+
+        $("#bg").click(function() {
+            $(this).hide();
+            $(".success").hide();
+        });
+    });
+
+
+    function check() {
+        if ($('#contents').val().length < 5) {
+            alert('请仔细内容');
+            return;
+        }
+
+        $(this).show();
+        $(".success").show();
+
+        setTimeout(function() {
+            setTimeout(function() {
+                $('#fankui').submit();
+            }, 200);
+        }, 200);
+    }
+    </script>
+    <script>
+    var fp = new Fingerprint({
+        canvas: true
+    });
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?d1ac514eea2374b6fa47c59097f69f15";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+
+
+    })();
+    </script>
+</body>
+
+</html>

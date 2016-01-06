@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <title>小客客</title>
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0, user-scalable=1">
+    <link rel="stylesheet" href="./common/bootstrap.min.css">
+    <link rel="apple-touch-icon-precomposed" sizes="57×57" href="http://libao.taofulila.com/zs_logo-57.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72×72" href="http://libao.taofulila.com/zs_logo-72.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114×114" href="http://libao.taofulila.com/zs_logo-114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144×144" href="http://libao.taofulila.com/zs_logo-144.png">
+    <script src="./common/hm.js"></script>
+    <script src="./common/jquery.min.js"></script>
+    <script type="text/javascript" src="./common/jquery.oLoader.min.js"></script>
+    <script type="text/javascript" src="./common/fingerprint.js"></script>
+    <script>
+    $(function() {
+        $.oPageLoader({
+            waitLoad: true,
+            fadeLevel: 1,
+            backgroundColor: '#fff',
+            style: 0,
+            fadeInTime: 30,
+            fadeOutTime: 300
+        });
+    });
+    </script>
+</head>
+
+<body style="overflow: auto;">
+    <link rel="stylesheet" href="./taskdetails_files/details.css">
+    <div class="fix_head">
+        <div class="go_back" onclick="location.href = 'a.html'"></div>
+        <span class="title">个人明细</span>
+    </div>
+    <nav class="nav">
+        <a href="details.html" class="left_a">系统</a>
+        <a class="bg_blue" style="border-left: 0;border-right: 0">任务</a>
+        <a href="pupildetails.html" style="border-right: 0">学徒</a>
+        <a href="exchangedetails.html" class="right_a">兑换</a>
+    </nav>
+    <div class="content">
+        <div class="blank">
+            <img src="./taskdetails_files/morentu.png" class="img-responsive">
+            <br>什么都没有</div>
+    </div>
+    <script>
+    $(function() {
+        var as = $(".nav").children("a");
+        as.each(function(index) {
+            $(this).click(index, function() {
+                as.removeClass("bg_blue");
+                as.addClass("bg_red");
+            });
+
+        });
+    });
+    </script>
+    <script>
+    var fp = new Fingerprint({
+        canvas: true
+    });
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?d1ac514eea2374b6fa47c59097f69f15";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+
+
+    })();
+    </script>
+</body>
+
+</html>

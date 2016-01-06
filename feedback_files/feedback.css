@@ -1,0 +1,202 @@
+@charset "utf-8";
+@font-face {
+    font-family: "Comic Sans MS","幼圆","黑体",sans-serif;
+  src: url('../fonts/STXihei.woff') format('woff'), url('../fonts/STXihei.svg') format('svg'), url("../fonts/STXihei.ttf") format('truetype');
+}
+@font-face {
+    font-family: "Comic Sans MS","幼圆","黑体",sans-serif;
+  src: url('../fonts/simpleXiHei.woff') format('woff'), url('../fonts/simpleXiHei.svg') format('svg'), url("../fonts/simpleXiHei.ttf") format('truetype');
+}
+/*
+ *背景颜色
+ */
+/*
+ *背景图片
+ */
+/*
+ *文字大小和粗细
+ */
+/*
+ *文字字体
+ */
+/*
+ *元素宽高
+ */
+/*
+ *元素外边距
+ */
+/*
+ *元素内边距
+ */
+/*
+ *几种边框
+ */
+/*
+ *几种常用定位方式
+ */
+/*
+ *清除浮动
+ */
+/*
+ *图片与容器等大小
+ */
+/*
+ *根据百分比设定背景图片大小
+ */
+/*
+ *旋转指定角度
+ */
+/*
+ *文本上下左右居中
+ */
+/*
+ *四个角的圆角
+ */
+body {
+    font-family: "Comic Sans MS","幼圆","黑体",sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background-color: #f4f4f5;
+}
+.container-fluid {
+  padding: 0;
+}
+.row {
+  margin: 0;
+}
+.col-xs-12 {
+  padding: 0;
+}
+.img_full {
+  width: 100%;
+  height: 100%;
+}
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 53.333px;
+  z-index: 10000;
+}
+.header > .col-xs-12 {
+  background-color: #FA5541;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 53.333px;
+  padding-left: 20px;
+  text-align: center;
+  position: relative;
+}
+.header > .col-xs-12 .title {
+  color: white;
+  font-size: 22px;
+  font-weight: normal;
+}
+.triangle {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 18px;
+  border-top: 3px solid #FFFFFF;
+  border-left: 3px solid #FFFFFF;
+  transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+}
+.welcome {
+  margin-top: 53.333px;
+  height: 60px;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 60px;
+  text-align: center;
+  border-bottom: 1px solid #d8d8d9;
+}
+.bd_btm {
+  border-bottom: 1px solid #d8d8d9;
+}
+.form {
+  padding-left: 15px;
+}
+.red_star {
+  color: red;
+}
+.fb_type {
+  font-size: 20px;
+  font-weight: normal;
+  color: black;
+  height: 60px;
+  line-height: 60px;
+}
+.select {
+  padding-left: 15px;
+  border: 1px solid #FA5541;
+  width: 150px;
+  height: 40px;
+  float: right;
+  margin: 10px 25px;
+}
+.fb_content {
+  padding-top: 15px;
+  padding-right: 35px;
+  font-size: 20px;
+  font-weight: normal;
+  color: black;
+}
+.fb_content .content {
+  font-size: 18px;
+  font-weight: normal;
+  padding: 10px 0 0 20px;
+  border: 1px solid #FA5541;
+  width: 100%;
+  height: 180px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.submit {
+  padding: 0 25px 0 10px;
+  margin-top: 20px;
+}
+.submit button {
+  width: 100%;
+  height: 50px;
+  font-size: 20px;
+  font-weight: normal;
+  border: none;
+  background-color: #FA5541;
+  color: white;
+  border-radius: 6px;
+}
+#bg {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: 999999;
+  -moz-opacity: 0.5;
+  opacity: .50;
+  filter: alpha(opacity=50);
+}
+.success {
+  position: fixed;
+  width: 180px;
+  height: 130px;
+  left: 50%;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 8px;
+  text-align: center;
+  z-index: 9999998;
+  margin-left: -90px;
+  top: 200px;
+  color: white;
+  font-size: 18px;
+  font-weight: normal;
+}
+.success div {
+  width: 60px;
+  height: 60px;
+  margin: 15px auto;
+}

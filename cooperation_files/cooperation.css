@@ -1,0 +1,122 @@
+@charset "utf-8";
+@font-face {
+    font-family: "Comic Sans MS","幼圆","黑体",sans-serif;
+  src: url('../fonts/STXihei.woff') format('woff'), url('../fonts/STXihei.svg') format('svg'), url("../fonts/STXihei.ttf") format('truetype');
+}
+@font-face {
+    font-family: "Comic Sans MS","幼圆","黑体",sans-serif;
+  src: url('../fonts/simpleXiHei.woff') format('woff'), url('../fonts/simpleXiHei.svg') format('svg'), url("../fonts/simpleXiHei.ttf") format('truetype');
+}
+/*
+ *背景颜色
+ */
+/*
+ *背景图片
+ */
+/*
+ *文字大小和粗细
+ */
+/*
+ *文字字体
+ */
+/*
+ *元素宽高
+ */
+/*
+ *元素外边距
+ */
+/*
+ *元素内边距
+ */
+/*
+ *几种边框
+ */
+/*
+ *几种常用定位方式
+ */
+/*
+ *清除浮动
+ */
+/*
+ *图片与容器等大小
+ */
+/*
+ *根据百分比设定背景图片大小
+ */
+/*
+ *旋转指定角度
+ */
+/*
+ *文本上下左右居中
+ */
+/*
+ *四个角的圆角
+ */
+body {
+    font-family: "Comic Sans MS","幼圆","黑体",sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background-color: #f2f6f7;
+}
+.container-fluid {
+  padding: 0;
+}
+.row {
+  margin: 0;
+}
+.col-xs-12 {
+  padding: 0;
+}
+.img_full {
+  width: 100%;
+  height: 100%;
+}
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 53.333px;
+    z-index: 10000;
+    background-color: #FA5541;
+}
+.header > .col-xs-12 {
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 53.333px;
+    padding-left: 20px;
+    text-align: center;
+    position: relative;
+}
+.header > .col-xs-12 .title {
+    color: white;
+    font-size: 18px;
+    font-weight: normal;
+}
+.triangle {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 18px;
+    border-top: 3px solid #FFFFFF;
+    border-left: 3px solid #FFFFFF;
+    transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+}
+.coop {
+  margin-top: 70px;
+  background-color: #ffffff;
+  padding: 5px 15px 30px;
+  font-size: 18px;
+  font-weight: normal;
+  color: #BBBDBC;
+}
+.coop h2 {
+  font-size: 24px;
+  font-weight: normal;
+  color: black;
+}
+.coop hr {
+  border: none;
+  margin: 5px 0;
+}
